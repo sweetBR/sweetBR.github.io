@@ -266,8 +266,7 @@
     .card a { margin-top: auto; text-decoration: none; font-weight: 700; color: var(--accent); }
 
     .skills-wrap {
-      display: grid; grid-template-columns: .85fr 1.15fr; gap: var(--space-6);
-      align-items: start;
+      display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--space-6);
     }
     .panel {
       background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg);
@@ -509,12 +508,14 @@
 </div>
 </section>
 <section id="skills">
-<div class="container skills-wrap">
+<div class="container">
 <div>
 <span class="eyebrow">Competences</span>
 <h2>What I bring to a team</h2>
 <p class="section-copy">The strongest pattern across my work is not just making features function. It is making systems hold together cleanly under real production pressure.</p>
-<div class="panel">
+</div>
+<div class="skills-wrap">
+<div class="panel" style="height: 100%;">
 <ul class="skill-list">
 <li><strong>Gameplay systems architecture</strong><span class="muted">Scalable Bedrock systems designed to be maintainable instead of disposable.</span></li>
 <li><strong>TypeScript and Bedrock Scripting API</strong><span class="muted">Feature implementation, modular logic, entity behaviors, and production-minded debugging.</span></li>
@@ -522,8 +523,7 @@
 <li><strong>Cross-discipline collaboration</strong><span class="muted">Comfortable turning design intent into clean technical execution alongside artists and builders.</span></li>
 </ul>
 </div>
-</div>
-<div class="panel">
+<div class="panel" style="height: 100%;">
 <h3>Professional snapshot</h3>
 <p class="muted">Computer Science background, years of Marketplace production, and a habit of treating Bedrock work like real software engineering instead of one-off scripting.</p>
 <div class="quest-card" style="margin-top:1.25rem;">
