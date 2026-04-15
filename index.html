@@ -189,11 +189,12 @@
       border-radius: calc(var(--radius-xl) - 8px);
     }
     .map-note {
-      position: absolute; inset: 1rem 1rem auto auto;
-      padding: .55rem .8rem; border-radius: var(--radius-pill);
-      font-size: var(--text-xs); color: var(--muted);
-      background: color-mix(in srgb, var(--surface) 88%, transparent);
-      border: 1px solid var(--line); backdrop-filter: blur(8px);
+      position: absolute; inset: 1.25rem 1.25rem auto auto;
+      padding: .65rem 1.25rem; border-radius: var(--radius-pill);
+      font-size: var(--text-base); color: var(--text); font-weight: 700;
+      background: color-mix(in srgb, var(--surface) 96%, transparent);
+      border: 2px solid var(--accent); backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px color-mix(in srgb, var(--accent) 30%, transparent);
     }
     .stats {
       display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--space-3); margin-top: var(--space-6);
@@ -204,6 +205,23 @@
     }
     .stat strong { display: block; font-size: 1.2rem; margin-bottom: .2rem; }
     .stat span { color: var(--muted); font-size: var(--text-sm); }
+
+    .about-grid {
+      display: grid; grid-template-columns: .8fr 1.2fr; gap: var(--space-8); align-items: center;
+    }
+    .about-image { position: relative; }
+    .about-image img {
+      width: 100%; height: auto;
+      border-radius: var(--radius-xl); border: 1px solid var(--line);
+      box-shadow: var(--shadow-sm); aspect-ratio: 4 / 5; object-fit: cover; background: var(--surface);
+    }
+    .about-image::before {
+      content: ""; position: absolute; inset: -1.5rem -1.5rem 1rem 1.5rem;
+      background: radial-gradient(circle at 10% 20%, rgba(212,145,87,.12), transparent 60%);
+      filter: blur(16px); z-index: -1;
+    }
+    .about-copy { display: flex; flex-direction: column; gap: var(--space-4); }
+    .about-copy p:not(.lead) { color: var(--muted); }
 
     .quest-card {
       padding: 1.1rem 1rem; border-radius: var(--radius-md);
@@ -277,7 +295,7 @@
     }
 
     @media (max-width: 980px) {
-      .hero-grid, .skills-wrap, .footer-card { grid-template-columns: 1fr; }
+      .hero-grid, .about-grid, .skills-wrap, .footer-card { grid-template-columns: 1fr; }
       .cards { grid-template-columns: 1fr 1fr; }
       .quest-grid { grid-template-columns: 1fr 1fr; }
       .hero-panel { padding: .8rem; }
@@ -292,7 +310,7 @@
       .hero-actions, .button { width: 100%; }
       h1 { max-width: 100%; }
       .hero-panel { padding: .7rem; }
-      .map-note { inset: .75rem .75rem auto auto; }
+      .map-note { inset: .75rem .75rem auto auto; padding: .5rem 1rem; font-size: var(--text-sm); box-shadow: none; border-width: 1px; }
     }
     .card-art img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 
@@ -313,6 +331,7 @@
 <span>Caio Costa</span>
 </a>
 <nav aria-label="Primary" class="nav-links">
+<a href="#about">About</a>
 <a href="#story">Story</a>
 <a href="#projects">Projects</a>
 <a href="#skills">Competences</a>
@@ -352,6 +371,21 @@
     fetchpriority="high"
   >
 </aside>
+</div>
+</section>
+<section id="about">
+<div class="container about-grid">
+<div class="about-image">
+<img src="./assets/my_photo_in_salvador_beach.jpg" alt="Caio Costa" width="1000" height="1250" loading="lazy" decoding="async">
+</div>
+<div class="about-copy">
+<span class="eyebrow">Introduction</span>
+<h2>I’m Caio Costa</h2>
+<p class="lead">I'm 23 years old, and games have been part of my life for as long as I can remember.</p>
+<p>From growing up with the PS1 and PS2, to spending countless hours on Xbox 360, PC, and Steam, gaming was never just a hobby to me&mdash;it was one of the first things that made me feel wonder, curiosity, and connection.</p>
+<p>Over time, that love for games turned into something bigger. What started as fascination became study, experimentation, and eventually a real career in game development. Today, I work as a developer focused on Minecraft Bedrock and Marketplace content, building gameplay systems, scripting features, and helping shape projects that reach players around the world.</p>
+<p>I still carry the same excitement I had as a kid discovering games for the first time, but now it lives alongside the responsibility and craft of building them. For me, game development is where creativity, problem-solving, and personal meaning meet.</p>
+</div>
 </div>
 </section>
 <section id="story">
