@@ -2,74 +2,70 @@
 
 <html data-theme="dark" lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Caio Costa — Bedrock Developer Portfolio</title>
-<meta content="Story-driven portfolio, Minecraft Bedrock developer specializing in Marketplace systems, gameplay scripting, and scalable TypeScript architecture." name="description"/>
-<link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&amp;f[]=satoshi@400,500,700&amp;display=swap" rel="stylesheet"/>
+<meta name="description" content="Story-driven portfolio, Minecraft Bedrock developer specializing in Marketplace systems, gameplay scripting, and scalable TypeScript architecture.">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@400,500,700&display=swap">
 <style>
     :root {
-      --text-xs: clamp(0.75rem, 0.72rem + 0.16vw, 0.875rem);
-      --text-sm: clamp(0.875rem, 0.84rem + 0.2vw, 1rem);
-      --text-base: clamp(1rem, 0.97rem + 0.2vw, 1.125rem);
-      --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.45rem);
-      --text-xl: clamp(1.6rem, 1.25rem + 1.25vw, 2.3rem);
-      --text-2xl: clamp(2.25rem, 1.3rem + 2.8vw, 4.5rem);
-      --space-1: 0.25rem;
-      --space-2: 0.5rem;
-      --space-3: 0.75rem;
-      --space-4: 1rem;
-      --space-5: 1.25rem;
-      --space-6: 1.5rem;
-      --space-8: 2rem;
-      --space-10: 2.5rem;
-      --space-12: 3rem;
-      --space-16: 4rem;
-      --space-20: 5rem;
-      --space-24: 6rem;
-      --radius-sm: 0.5rem;
-      --radius-md: 0.9rem;
-      --radius-lg: 1.2rem;
-      --radius-xl: 1.8rem;
-      --radius-pill: 999px;
+      --text-xs:   clamp(.75rem,  .72rem + .16vw, .875rem);
+      --text-sm:   clamp(.875rem, .84rem + .2vw,  1rem);
+      --text-base: clamp(1rem,    .97rem + .2vw,  1.125rem);
+      --text-lg:   clamp(1.125rem, 1rem + .6vw,   1.45rem);
+      --text-xl:   clamp(1.6rem,  1.25rem + 1.25vw, 2.3rem);
+      --text-2xl:  clamp(2.25rem, 1.3rem + 2.8vw, 4.5rem);
+
+      --space-1: .25rem;  --space-2: .5rem;   --space-3: .75rem;
+      --space-4: 1rem;    --space-5: 1.25rem; --space-6: 1.5rem;
+      --space-8: 2rem;    --space-10: 2.5rem; --space-12: 3rem;
+      --space-16: 4rem;   --space-20: 5rem;   --space-24: 6rem;
+
+      --radius-sm: .5rem; --radius-md: .9rem; --radius-lg: 1.2rem;
+      --radius-xl: 1.8rem; --radius-pill: 999px;
+
       --shadow-sm: 0 10px 30px rgba(0,0,0,.12);
       --shadow-lg: 0 20px 60px rgba(0,0,0,.22);
+
       --content: 1160px;
       --font-display: 'Boska', Georgia, serif;
       --font-body: 'Satoshi', Inter, sans-serif;
     }
 
-    :root,
-    [data-theme="light"] {
+    :root, [data-theme="light"] {
       --bg: #f3ede3;
       --bg-soft: #efe6d8;
-      --surface: rgba(255,255,255,0.62);
-      --surface-2: rgba(255,255,255,0.42);
-      --line: rgba(67, 48, 27, 0.14);
-      --line-strong: rgba(67, 48, 27, 0.24);
+      --surface: rgba(255,255,255,.62);
+      --surface-2: rgba(255,255,255,.42);
+      --line: rgba(67,48,27,.14);
+      --line-strong: rgba(67,48,27,.24);
       --text: #25180d;
       --muted: #6c5c49;
       --accent: #7d3f20;
       --accent-2: #b88a34;
-      --accent-soft: rgba(125, 63, 32, 0.1);
+      --accent-soft: rgba(125,63,32,.1);
       --success: #355d38;
-      --hero-glow: radial-gradient(circle at 20% 20%, rgba(184,138,52,.28), transparent 35%), radial-gradient(circle at 80% 10%, rgba(125,63,32,.18), transparent 28%);
+      --hero-glow:
+        radial-gradient(circle at 20% 20%, rgba(184,138,52,.28), transparent 35%),
+        radial-gradient(circle at 80% 10%, rgba(125,63,32,.18), transparent 28%);
     }
 
     [data-theme="dark"] {
       --bg: #15110f;
       --bg-soft: #1b1513;
-      --surface: rgba(33, 26, 23, 0.86);
-      --surface-2: rgba(55, 43, 38, 0.58);
-      --line: rgba(255, 234, 215, 0.11);
-      --line-strong: rgba(255, 234, 215, 0.2);
+      --surface: rgba(33,26,23,.86);
+      --surface-2: rgba(55,43,38,.58);
+      --line: rgba(255,234,215,.11);
+      --line-strong: rgba(255,234,215,.2);
       --text: #f0e6d8;
       --muted: #bcae9c;
       --accent: #d49157;
       --accent-2: #f0c871;
-      --accent-soft: rgba(212, 145, 87, 0.12);
+      --accent-soft: rgba(212,145,87,.12);
       --success: #8cbb8f;
-      --hero-glow: radial-gradient(circle at 20% 20%, rgba(240,200,113,.12), transparent 35%), radial-gradient(circle at 80% 10%, rgba(212,145,87,.12), transparent 28%);
+      --hero-glow:
+        radial-gradient(circle at 20% 20%, rgba(240,200,113,.12), transparent 35%),
+        radial-gradient(circle at 80% 10%, rgba(212,145,87,.12), transparent 28%);
     }
 
     * { box-sizing: border-box; }
@@ -95,6 +91,7 @@
     }
     .skip-link:focus { left: 1rem; top: 1rem; }
 
+    /* header */
     .site-header {
       position: sticky; top: 0; z-index: 20;
       backdrop-filter: blur(18px);
@@ -147,11 +144,15 @@
     .lead { font-size: var(--text-lg); color: var(--muted); max-width: 38rem; }
     .section-copy { color: var(--muted); margin-bottom: var(--space-8); }
 
+    /* hero */
     .hero-grid {
-      display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(2rem, 4vw, 5rem); align-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(1.5rem, 3vw, 2.5rem);
     }
     .hero-copy { display: flex; flex-direction: column; gap: var(--space-5); }
     .hero-actions { display: flex; gap: var(--space-3); flex-wrap: wrap; padding-top: var(--space-2); }
+
     .button {
       display: inline-flex; align-items: center; justify-content: center; gap: .65rem;
       min-height: 2.9rem; padding: .8rem 1.1rem; border-radius: var(--radius-pill);
@@ -161,30 +162,38 @@
     .button:hover, .button:focus-visible { transform: translateY(-2px); border-color: var(--line-strong); }
     .button.primary {
       background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 82%, #000 18%));
-      color: #fff; border-color: transparent;
-      box-shadow: var(--shadow-sm);
+      color: #fff; border-color: transparent; box-shadow: var(--shadow-sm);
     }
     .button.secondary { background: var(--surface); }
 
     .hero-panel {
-      position: relative; min-height: 34rem; padding: clamp(1.2rem, 2vw, 2rem);
+      position: relative;
+      width: 100%; min-height: unset; padding: .9rem;
       border-radius: calc(var(--radius-xl) + .5rem);
-      background: linear-gradient(180deg, var(--surface), rgba(0,0,0,0.03));
+      background: linear-gradient(180deg, var(--surface), rgba(0,0,0,.03));
       border: 1px solid var(--line);
       box-shadow: var(--shadow-lg);
-      overflow: hidden;
-      isolation: isolate;
+      overflow: hidden; isolation: isolate;
     }
     .hero-panel::after {
-      content: ""; position: absolute; inset: auto -20% -15% 25%; height: 15rem;
+      content: "";
+      position: absolute;
+      inset: auto -20% -15% 25%; height: 15rem;
       background: radial-gradient(circle, rgba(212,145,87,.24), transparent 65%);
       filter: blur(12px); z-index: -1;
+    }
+    .hero-panel img {
+      width: 100%; height: auto; display: block;
+      aspect-ratio: 5 / 4;
+      object-fit: contain; object-position: center;
+      border-radius: calc(var(--radius-xl) - 8px);
     }
     .map-note {
       position: absolute; inset: 1rem 1rem auto auto;
       padding: .55rem .8rem; border-radius: var(--radius-pill);
-      font-size: var(--text-xs); color: var(--muted); background: var(--surface);
-      border: 1px solid var(--line);
+      font-size: var(--text-xs); color: var(--muted);
+      background: color-mix(in srgb, var(--surface) 88%, transparent);
+      border: 1px solid var(--line); backdrop-filter: blur(8px);
     }
     .stats {
       display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--space-3); margin-top: var(--space-6);
@@ -271,7 +280,8 @@
       .hero-grid, .skills-wrap, .footer-card { grid-template-columns: 1fr; }
       .cards { grid-template-columns: 1fr 1fr; }
       .quest-grid { grid-template-columns: 1fr 1fr; }
-      .hero-panel { min-height: 28rem; }
+      .hero-panel { padding: .8rem; }
+      .hero-panel img { aspect-ratio: auto; }
     }
 
     @media (max-width: 680px) {
@@ -279,28 +289,12 @@
       .nav-links { gap: .8rem; }
       .cards, .quest-grid, .stats { grid-template-columns: 1fr; }
       .project-group-head { flex-direction: column; align-items: start; }
-      .hero-actions { width: 100%; }
-      .button { width: 100%; }
+      .hero-actions, .button { width: 100%; }
       h1 { max-width: 100%; }
-      .hero-panel { min-height: 24rem; }
+      .hero-panel { padding: .7rem; }
+      .map-note { inset: .75rem .75rem auto auto; }
     }
-  
-    .hero-map img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      border-radius: calc(var(--radius-xl) - 8px);
-      display: block;
-    }
-
-    .card-art img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
+    .card-art img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 
   </style>
 </head>
@@ -348,8 +342,15 @@
 </div>
 </div>
 <aside aria-label="Story illustration" class="hero-panel">
-<div class="map-note">Brazil → United States</div><img alt="A golden dreamlike journey from Brazil to the United States, symbolizing a personal quest becoming a career." decoding="async" fetchpriority="high" height="1120" src="./assets/brazil-to-eua.jpg" width="1400"/>
-
+  <div class="map-note">Brazil → United States</div>
+  <img
+    src="./assets/brazil-to-eua.jpg"
+    alt="A golden dreamlike journey from Brazil to the United States, symbolizing a personal quest becoming a career."
+    width="1400"
+    height="1120"
+    decoding="async"
+    fetchpriority="high"
+  >
 </aside>
 </div>
 </section>
