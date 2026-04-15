@@ -283,6 +283,24 @@
       h1 { max-width: 100%; }
       .hero-panel { min-height: 24rem; }
     }
+  
+    .hero-map img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: calc(var(--radius-xl) - 8px);
+      display: block;
+    }
+
+    .card-art img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
   </style>
 </head>
 <body>
@@ -421,13 +439,7 @@
           </div>
           <div class="cards">
             <article class="card">
-              <div class="card-art" aria-hidden="true">
-                <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M8 51 28 31l11 10 24-27 29 37H8Z" opacity=".9"/>
-                  <path d="M12 50h76" opacity=".55"/>
-                  <path d="M23 28 35 16l12 12" opacity=".8"/>
-                </svg>
-              </div>
+              <div class="card-art"><img src="./assets/skibidi-toilet-raids.jpg" alt="Cover art for Skibidi Toilet Raids v1.1, showing a stylized raid-themed add-on title treatment." width="1200" height="750" loading="lazy" decoding="async"></div>
               <div class="tag-row"><span class="tag">Parkour</span><span class="tag">Level Flow</span><span class="tag">Early Work</span></div>
               <div>
                 <h3>Kingdom Parkour</h3>
@@ -436,7 +448,7 @@
               <a href="https://www.bedrockexplorer.com/@thunderay/kingdom-parkour" target="_blank" rel="noopener noreferrer">Open project page ↗</a>
             </article>
             <article class="card">
-              <div class="card-art" aria-hidden="true">
+              <div class="card-art">
                 <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="1.6">
                   <path d="M10 52c10-12 20-20 34-22 10-2 20-8 31-18 4 12 8 23 15 40H10Z" opacity=".9"/>
                   <path d="M17 24l9-9 6 6" opacity=".7"/>
@@ -451,7 +463,7 @@
               <a href="https://www.bedrockexplorer.com/@team-visionary/frozen-dragon-village" target="_blank" rel="noopener noreferrer">Open project page ↗</a>
             </article>
             <article class="card">
-              <div class="card-art" aria-hidden="true">
+              <div class="card-art">
                 <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="1.6">
                   <rect x="12" y="22" width="18" height="18" opacity=".88"/>
                   <rect x="34" y="14" width="18" height="26" opacity=".75"/>
@@ -479,7 +491,7 @@
           </div>
           <div class="cards">
             <article class="card">
-              <div class="card-art" aria-hidden="true">
+              <div class="card-art">
                 <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="1.6">
                   <path d="M12 43c5-12 15-20 30-20 11 0 18 4 27 11 6 5 10 8 19 8" opacity=".9"/>
                   <path d="M24 35c4-7 10-11 19-11 8 0 13 3 20 9" opacity=".7"/>
@@ -494,7 +506,7 @@
               <a href="https://www.minecraft.net/en-us/marketplace/pdp/logdotzip/biome-pets/95ca3f69-5845-4076-8d23-3d4d254ff040" target="_blank" rel="noopener noreferrer">Open marketplace page ↗</a>
             </article>
             <article class="card">
-              <div class="card-art" aria-hidden="true">
+              <div class="card-art">
                 <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="1.6">
                   <rect x="18" y="14" width="50" height="32" rx="4" opacity=".9"/>
                   <path d="M68 26h14l6 7-6 7H68" opacity=".8"/>
@@ -509,7 +521,7 @@
               <a href="https://www.minecraft.net/en-us/marketplace/pdp/logdotzip/kipper%E2%80%99s-boss-box/bc3d6f52-0445-47b5-9b76-69359b8792bc" target="_blank" rel="noopener noreferrer">Open marketplace page ↗</a>
             </article>
             <article class="card">
-              <div class="card-art" aria-hidden="true">
+              <div class="card-art">
                 <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="1.6">
                   <path d="M20 42c0-12 9-22 22-22 8 0 15 4 20 10 2-9 11-15 20-15" opacity=".9"/>
                   <path d="M34 28l6 7 9-14" opacity=".8"/>
@@ -524,7 +536,7 @@
               <a href="https://www.minecraft.net/en-us/marketplace/pdp/logdotzip/enderman-morph-add--on/22530c8e-4ba5-46ca-b756-a274b54eab86" target="_blank" rel="noopener noreferrer">Open marketplace page ↗</a>
             </article>
             <article class="card">
-              <div class="card-art" aria-hidden="true">
+              <div class="card-art">
                 <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="1.6">
                   <path d="M11 43c10-7 19-11 30-11 6 0 12 1 18 4 4-9 12-15 27-20" opacity=".86"/>
                   <path d="M29 28l9-9 7 7-9 9-7-7Z" opacity=".8"/>
@@ -584,13 +596,13 @@
         <span class="eyebrow">Final screen</span>
         <h2>Open for the next big project</h2>
         <p class="lead">Whether the next role is Bedrock systems, Marketplace production, or a broader gameplay engineering step, the core remains the same: build well, communicate clearly, and ship with intent.</p>
-        <p class="footer-note">Résumé PDF slot: swap the placeholder link below with your uploaded PDF once you have it ready.</p>
+        <p class="footer-note">Portfolio visuals blend project-linked cover art with a story-first presentation built for recruiters, collaborators, and studios reviewing Minecraft Marketplace work.</p>
       </div>
       <div class="panel" style="height: 100%;">
         <h3>Contact</h3>
         <ul class="contact-list">
           <li><strong>Email</strong><br><span class="muted">caioluciano06@hotmail.com</span></li>
-          <li><strong>Discord</strong><br><span class="muted">hartlley</span></li>
+          <li><strong>Discord</strong><br><span class="muted">hartlley.</span></li>
           <li><strong>Location</strong><br><span class="muted">New Jersey, United States · Eastern Time</span></li>
           <li><strong>Résumé</strong><br><a href="https://drive.google.com/file/d/16hwV6QQR7Cg1wtGBwi7sHuA5YcEPkcp9/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">Open résumé PDF ↗</a></li>
         </ul>
